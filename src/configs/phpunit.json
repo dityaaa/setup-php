@@ -4,19 +4,10 @@
       "owner": "phpunit",
       "pattern": [
         {
-          "regexp": "^\\d+\\)\\s.*$"
-        },
-        {
-          "regexp": "^(.*Failed\\sasserting\\sthat.*)$",
-          "message": 1
-        },
-        {
-          "regexp": "^\\s*$"
-        },
-        {
-          "regexp": "^(.*):(\\d+)$",
-          "file": 1,
-          "line": 2
+          "regexp": "^\\d+\\)\\s.*$^\\d\\)\\s.*$\\s((?:\\s?..*)*$)\\s{2}(?:.*\\n)*^(.*):(\\d+)$\\n^$",
+          "message": 1,
+          "file": 2,
+          "line": 3
         }
       ]
     }
